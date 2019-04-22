@@ -46,7 +46,6 @@ app.post('/post', function(req, res){
                 console.log('\'' + text + '\' posted successfully')
             }
           })
-    })
     res.redirect('/')
 })
 
