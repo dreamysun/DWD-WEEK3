@@ -41,7 +41,7 @@ app.post('/post', function(req, res){
 
         client.query('INSERT INTO posts (message) VALUES (\'' + text + '\')', (err, res) => {
             if (err) {
-              console.log(err.stack)
+              console.log("err1")
             } else {
                 console.log('\'' + text + '\' posted successfully')
             }
