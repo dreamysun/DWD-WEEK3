@@ -10,7 +10,7 @@ if(process.env.DATABASE_URL){
     client = new Client({connectionString: process.env.DATABASE_URL, ssl: true})
 }
 else{
-    client = new Client({database: 'test'})
+    client = new Client({database:'posts'})
 }
 
 client.connect()
