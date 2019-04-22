@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dreamysun/DWD-WEEK3#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "pg": "^7.10.0"
   }
