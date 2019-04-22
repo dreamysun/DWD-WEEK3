@@ -18,8 +18,8 @@ client.connect()
 let app = express()
 
 app.engine('html', mustacheExpress());
-app.set('view engine', 'html');
-app.set('views', __dirname);
+app.set('forum', 'html');
+app.set('forum', __dirname);
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -39,7 +39,7 @@ app.get('/', function(req, res){
 app.post('/post', function(req, res){
     let text = req.body.postText
     if(text === undefined){
-        res.send('The name you submitted is not correct.')
+        res.send('xxx')
     }
     else{
         // res.send(band + ' is ' + insults[Math.floor(insults.length * Math.random())])
@@ -57,5 +57,5 @@ app.post('/post', function(req, res){
 
 
 app.listen(process.env.PORT || 8000, function(){
-    console.log('Example app listening on port 3000!')
+    console.log('port change')
 })
