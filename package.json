@@ -1,7 +1,11 @@
 {
   "name": "dwd-week3",
   "version": "1.0.0",
-  "description": "",
+  "engines": {
+   "node": "v10.15.3",
+   "npm":"6.4.1",
+ },
+  "description": "hh",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
