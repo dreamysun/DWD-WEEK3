@@ -31,7 +31,7 @@ client.connect();
  app.get('/', async (req, res) => {
     try {
       //const client = await pool.connect()
-      const result = await client.query('SELECT * FROM forum');
+      const result = await client.query('SELECT * FROM DATABASE');
       //const results = { 'results': (result) ? result.rows : null};
       //for (var i = 0; i < result.rows.length; i++) {
         lost = result.rows;
